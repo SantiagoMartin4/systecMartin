@@ -29,9 +29,9 @@ header{
 }
 .logo {
     overflow: hidden;
-    width: 200px;
+    max-width: 240px;
     height: auto;
-    margin: 5vh 5vh 5.5vh;  
+    margin: 0.8rem;  
     /* border: #000 solid;
     border-radius: 0.5rem;
     border-width: 2px; */
@@ -104,9 +104,16 @@ main{
     grid-area: main;
     margin: 50px 10px 20px 10px;
 }
+.enterate {
+    margin: 2rem;
+    margin-top: 5rem;
+}
 main img{
     max-width: 100%;
     height: auto;
+}
+.sidetoside {
+    margin: 1rem 0.1rem; 
 }
 .sidetoside p{
     padding: 10px 10px;
@@ -234,7 +241,7 @@ footer{
 
 
                 /* media query para MOBILE*/
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .menu{
         flex-wrap: wrap;
         justify-content: center;
@@ -256,10 +263,10 @@ footer{
     aside p{
         padding: 15px 5px;
     }
-}
+} */
 
                 /* defino media query para resolucion TABLET*/
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .menu{
         justify-content: right;
         position: relative;
@@ -290,10 +297,10 @@ footer{
         width: 90%;
         justify-content: flex-end;
     }
-}
+} */
 
                 /* defino media query para resolucion DESKTOP*/
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     .menu{
         justify-content: right;
         position: relative;
@@ -334,4 +341,4 @@ footer{
         width: 250px;
         margin: 1rem 0 1rem 3rem;
     }
-}
+} */
