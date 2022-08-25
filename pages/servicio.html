@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SySTEC Computación</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.min.css" integrity="sha512-/2285SnGiTHjSKBkJzedsJ8wwSP0j74ZQyusMQ9j5Z1RtyKqZ3XtfS8hVp8OadLs2uq+8V6/n+CyqUNTO/UpYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="shortcut icon" href="../css/styles.css"> 
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../media/systec_logo_reduct.jpg"> 
 </head>
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../media/systec_logo_reduct.jpg" alt="logo de SySTEC computación"></a>    
-        <nav>
-            <ul class="menu">
-                <li><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
-                <li id="servicioButton"><a class="nav-link" href="#">Servicio Técnico</a></li>
-                <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <a href="../index.html"><img class="logo" src="../media/systec_logo_reduct.jpg" alt="logo de SySTEC computación"></a>    
+        </div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li id="servicioButton" class="nav-item"><a class="nav-link" href="#">Servicio Técnico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
     </header> 
-    <main>
-        <h2>NOS ESPECIALIZAMOS EN</h2>
+    <main class="container-fluid">
+        <h2 class="animate__animated animate__fadeInRight">NOS ESPECIALIZAMOS EN</h2>
             <article id="serviceList">
                 <div class="pList">
                     <p>Servicio Técnico</p>
@@ -40,23 +48,23 @@
                     <button class="bttn-gradient bttn-md bttn-success"><a href="./contacto.html">Consultanos</a></button>
                 </div>
             </article>
-        <div class="sidetoside">
-            <article>
+        <div class="row sidetoside">
+            <article class="col-xs-12 col-sm-12 col-md-6">
                 <img class="serviceImg" src="../media/Sin título.jpg" alt="systecPc">
             </article>
-            <aside>
+            <aside class="col-xs-12 col-sm-12 col-md-6">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque nostrum excepturi odio sapiente natus provident illum error fugiat maiores eligendi facilis, eveniet, 
                 </p>
             </aside>
         </div>
-        <div class="sidetoside">
-            <aside>
+        <div class="row sidetoside">
+            <aside class="col-xs-12 col-sm-12 col-md-6">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque nostrum excepturi odio sapiente natus provident illum error fugiat maiores eligendi facilis, eveniet, 
                 </p>
             </aside>
-            <article>
+            <article class="col-xs-12 col-sm-12 col-md-6">
                 <img class="serviceImg" src="../media/service.jpg" alt="systecPc">
             </article>
         </div>
@@ -78,5 +86,10 @@
             <i class="fa-solid fa-square-phone"></i>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
