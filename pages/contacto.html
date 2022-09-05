@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SySTEC Computación - Nosotros</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../media/systec_logo_reduct.jpg">
+    <meta name="description" content="SySTEC Computación. Página dedicada al mundo de la computación y la tecnología. Especializada en la venta de hardware y el servicio técnico. Nuestros clientes nos buscan porque tenemos la mejor atención y un variado stock en mothers, procesadores, placas de video, teclados, gabinetes, mouse, pcs armadas y mucho más.">
+    <meta name="keywords" content="computación, contacto, venta, servicio técnico, general madariaga">
+    <title>SYSTEC COMPUTACIÓN  |  Contacto</title>
 </head>
+
 <body>
     <header>
         <div class="container-fluid">
-            <a href="../index.html"><img class="logo" src="../media/systec_logo_reduct.jpg" alt="logo de SySTEC computación"></a>    
+            <a href="../index.html"><img class="logo" src="../media/systec_logo_reduct.jpg"
+                    alt="logo de SySTEC computación"></a>
         </div>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -32,49 +39,126 @@
             </div>
     </header>
     <main id="contactMain">
-        <h2 id="contact"> Escribinos tu consulta</h2>
-        <div class="contactForm">
-            <form action="enviar.php" method="post" enctype="text/plain" netlify> 
-                <div id="formName">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre"><br>
+        <section class="container-fluid .d-flex contactos">
+            <h2 class="center">Comunicate con nosotros</h2>
+            <h3 class="center">Chat directo vía Whatsapp</h3>
+            <div class="wapp">
+                <a href='https://wa.me/5492267438446'><i class="fa-brands fa-whatsapp" id="wappSuperior"></i></a>
+            </div>
+            <h3 class="center">No te olvides de seguirnos en nuestras redes para enterarte de todas las novedades</h3>
+            <div class="wapp">
+                <a href='https://instagram.com/systeccomputacion?igshid=YmMyMTA2M2Y='><i class="fa-brands fa-instagram" id="wappSuperior"></i></a>
+                <a href='https://www.facebook.com/systec.madariaga/'><i class="fa-brands fa-facebook" id="wappSuperior"></i></a>
+            </div>
+        </section>
+        <div class="container">
+            <div class=" text-center mt-5 ">
+                <h3 id="contact">También podés dejarnos tu consulta por aquí, te responderemos a la brevedad</h3>
+            </div>
+            <div class="row ">
+                <div class="col-lg-7 mx-auto">
+                    <div class="card mt-2 mx-auto p-4 bg-light">
+                        <div class="card-body bg-light">
+                            <div class="container">
+                                <form id="contact-form" role="form">
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">Nombre *</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control"
+                                                        placeholder="Escribe aquí tu nombre *" required="required"
+                                                        data-error="Por favor ingresa un nombre válido">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_lastname">Apellido *</label>
+                                                    <input id="form_lastname" type="text" name="surname"
+                                                        class="form-control" placeholder="Escribe aquí tu apellido *"
+                                                        required="required" data-error="Por faovr ingresa un apellido válido">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_email">Email *</label>
+                                                    <input id="form_email" type="email" name="email"
+                                                        class="form-control" placeholder="Escribe aquí tu correo electrónico *"
+                                                        required="required" data-error="Valid email is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_need">Selecciona una opción *</label>
+                                                    <select id="form_need" name="need" class="form-control"
+                                                        required="required" data-error="Por favor selecciona una opción de consulta.">
+                                                        <option value="" selected disabled>--Selecciona un tipo de consulta--
+                                                        </option>
+                                                        <option>Consulta por producto</option>
+                                                        <option>Consulta por reparación / servicio técnico</option>
+                                                        <option>Pedido de presupuesto</option>
+                                                        <option>Otra</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_message">Mensaje *</label>
+                                                    <textarea id="form_message" name="message" class="form-control"
+                                                        placeholder="Escribe tu consulta aquí." rows="4"
+                                                        required="required"
+                                                        data-error="Por favor, dejanos tu mensaje aquí."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="submit" class="btn btn-success btn-send  pt-2 btn-block
+                                                " value="Enviar Consulta">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="formEmail">
-                    <label for="correo"> E-mail:</label>
-                    <input type="email" name="correo"><br>
-                </div>
-                <div id="formComs">
-                    <label for="comentarios"> Tu consulta:</label>
-                    <textarea name="comentarios" cols="30" rows="5"></textarea><br>
-                </div>
-                <div id="formButtons">
-                    <input type="submit" value="Enviar consulta">
-                    <input type="reset" value="Borrar todo">
-                </div>
-            </form>
+            </div>
         </div>
     </main>
     <footer>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2188.0942235190228!2d-57.13742574564856!3d-37.00185047921043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b9d0da39b298f%3A0x2b96eefef5c6a5e4!2sSySTEC%20Computacion!5e0!3m2!1ses-419!2sar!4v1658171003097!5m2!1ses-419!2sar" width="240" height="240" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
         </div>
+        
         <div class="calendar">
-            <i class="fa-solid fa-calendar"></i>
-            <i class="fa-solid fa-clock"></i>
-            <p>Estamos de Lunes a Viernes de 9:00 a 13:00 y de 15:30 a 20:00, Sábados de 9 a 13</p>
-            <p>Encontranos en Sarmiento 1343 Gral. Madariaga 
-            </p>
+            <div class="container-fluid d-inline-flex" id="calendarIcons">
+                <i class="fa-solid fa-calendar"></i>
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <h5>Estamos de Lunes a Viernes de 9:00 a 13:00 y de 15:30 a 20:00, Sábados de 9 a 13</h5>
+            <h5>Encontranos en Sarmiento Nº 1343 - General Madariaga</h5>
         </div>
         <div class="redes">
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-square-phone"></i>
+            <a href='https://wa.me/5492267438446'><i class="fa-brands fa-whatsapp"></i></a>
+            <a href='https://instagram.com/systeccomputacion?igshid=YmMyMTA2M2Y='><i class="fa-brands fa-instagram"></i></a>
+            <a href='mailto:systec@outlook.com.ar'><i class="fa-solid fa-envelope"></i></a>
         </div>
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

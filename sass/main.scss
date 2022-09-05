@@ -1,0 +1,40 @@
+/* importo fuentes de google desde sass para poder eliminar las etiquetas links de los heads de las pages reduciendo código */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+
+/* defino variables */
+$colorFondoButton: linear-gradient(#07681cb6, #efefefef);
+$calendarIconsColor: rgb(39, 52, 43);
+
+/*defino mi reseteo universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* defino font family para todo el html*/
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* defino mi grid para el body de todas las páginas*/
+body {
+    background-color: #efefef !important;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto auto;
+}
+
+/* importo mis partials*/
+
+@import 'layout/header';
+
+@import 'layout/mainContent';
+
+@import 'layout/footer';
+
+@import 'layout/mediaQuery';
