@@ -85,6 +85,9 @@ main {
 main .enterate {
   margin: 2rem;
 }
+main p {
+  font-size: 1.2rem;
+}
 main .contactos {
   display: flex !important;
   flex-direction: column;
