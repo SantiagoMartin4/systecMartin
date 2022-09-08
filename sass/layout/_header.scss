@@ -1,0 +1,68 @@
+/* defino propiedades generales para el HEADER (y barra de nav) de todas las páginas Indentado con formato Sass*/
+header {
+    grid-area: header;
+    background-image: url(../media/computer-3128030_1920.jpg);
+    background-size: cover;
+    background-color: #65743aff;
+
+    .logo {
+        overflow: hidden;
+        max-width: 240px;
+        height: auto;
+        margin: 0.8rem;
+    
+        &:hover {
+            box-shadow: 0 0.3rem 2rem #f4fdafff;
+            transition: box-shadow 0.5s ease-in-out;
+            cursor: pointer;
+        }
+    }
+
+    .navbar {
+        z-index: 2;
+        padding: 0.2rem 1rem;
+
+        .navbar-nav li a {
+            font-weight: 700;
+            color: rgb(255, 255, 255) !important;
+        }
+
+        .navbar-nav li:hover {
+            transform: scale(1.1);
+            transition: all 0.4s ease;
+        }
+    }
+}
+
+/* estilo de fondo del botón cuando ya lo tengo activo*/
+#indexButton {
+    background-image: $colorFondoButton;
+}
+
+#indexButton:hover {
+    transform: none;
+}
+
+#nosotrosButton {
+    @extend #indexButton;
+}
+
+#nosotrosButton:hover {
+    transform: none;
+}
+
+#contactoButton {
+    @extend #indexButton;
+}
+
+#contactoButton:hover {
+    transform: none;
+}
+
+#servicioButton {
+    @extend #indexButton;
+}
+
+#servicioButton:hover {
+    transform: none;
+}

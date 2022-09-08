@@ -1,0 +1,90 @@
+/* defino propiedades para todas las páginas de FOOTER*/
+footer {
+    grid-area: footer;
+    background-color: #00000081;
+    color: #ffffff;
+    display: grid;
+    grid-template-areas:
+        "map calendar"
+        "redes redes";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 10px 20px;
+}
+
+.map {
+    margin: 1rem 0 0.5rem 0.4rem;
+    grid-area: map;
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.calendar {
+    margin-top: 3rem;
+    width: 90%;
+    height: auto;
+    grid-area: calendar;
+    background: linear-gradient(to right, #A5CC82, #00467F);
+    h5 {
+        margin: 1rem 1rem;
+        font-weight: 700;
+    }
+}
+
+#calendarIcons {
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.fa-calendar {
+    color: $calendarIconsColor;
+    font-size: 55px;
+}
+.fa-clock {
+    @extend .fa-calendar;
+}
+
+.redes {
+    width: 30%;
+    height: auto;
+    grid-area: redes;
+    display: flex;
+    flex-wrap: nowrap;
+
+    i {
+        font-size: 70px;
+        margin: 0 20px 1rem 5px;
+    }
+}
+
+.fa-whatsapp {
+    color: #25D366;
+    &:hover {
+        transform: scale(1.25);
+        transition: all 0.4s ease;
+    }
+}
+
+.fa-instagram {
+    @extend .fa-whatsapp;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    height: 68px;
+    color: rgba(255, 255, 255, 0.835);
+}
+
+.fa-envelope {
+    @extend .fa-whatsapp;
+    color: #43b7db;
+}
+
+.fa-facebook {
+    @extend .fa-whatsapp;
+    color:rgba(7, 7, 255, 0.835);
+}
+

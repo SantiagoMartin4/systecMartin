@@ -1,0 +1,129 @@
+/* defino propiedades de todas las páginas para MAIN*/
+
+/* defino mixin*/
+@mixin sizes($height, $width) {
+    height: $height; 
+    width: $width;
+}
+
+main {
+    grid-area: main;
+    margin: 50px 10px 20px 10px;
+
+    .enterate {
+        margin: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .contactos {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .center, .wapp {
+        margin-left: 4rem;
+        padding: 15px;
+    }
+        #wappSuperior {
+        font-size: 80px;
+        margin: 0 20px 1rem 5px;
+        height: 78px;
+        }
+    
+    img {
+        object-fit: scale-down;
+        @include sizes(60vh, 100%);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(108%);
+    }
+
+    .carousel-indicators li {
+        filter: invert(108%);
+        @include sizes(0.5rem, 0.5rem);
+    }
+
+    .carousel-caption {
+        max-width: 30rem;
+        max-height: 4.5rem;
+        top: -1.5rem;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.796);
+
+        p {
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+
+    .sidetoside {
+        margin: 1rem 0.1rem;
+    }
+
+    aside {
+        display: flex;
+        align-items: center;
+    }
+
+    .mainText p {
+        margin: 4rem;
+    }
+
+    .especialidad {
+        margin-left: 3rem !important;
+    }
+
+    .nosotrosImg {
+        min-width: 300px;
+    }
+
+    #containerList {
+        justify-content: center;
+        max-width: 100vw;
+    }
+    .serviceList {
+        list-style: none;
+        margin: 2rem 5rem;
+
+        li {
+            font-weight: 700;
+            padding: 0.3rem;
+        }
+    }
+
+    .serviceImg {
+        @include sizes(auto, 100%);
+        max-width: 60rem;
+    }
+
+    #serviceList {
+        background-color: rgba(239, 221, 141, 0.277);
+        display: flex;
+        border: solid #000000b6;
+        max-width: 30rem;
+        margin: 2rem;
+
+        p {
+            padding: 1rem;
+            margin: 0.5rem;
+            font-weight: 700;
+        }
+    }
+
+    .divList {
+        width: 80%;
+    }
+
+    .consulta {
+        margin: auto;
+        margin-right: 2rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

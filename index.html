@@ -5,48 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SySTEC Computación</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./media/systec_logo.jpg"> 
+    <meta name="description" content="SySTEC Computación. Página dedicada al mundo de la computación y la tecnología. Especializada en la venta de hardware y el servicio técnico. Nuestros clientes nos elijen porque tenemos la mejor atención y un variado stock en mothers, procesadores, placas de video, teclados, gabinetes, mouse, pcs armadas y mucho más.">
+    <meta name="keywords" content="computación, últimos ingresos, PC, CPU, procesador, placa de video, monitor, servicio técnico, tienda de informática, general madariaga">
+    <title>SYSTEC COMPUTACIÓN  |  Página de Inicio con últimas novedades</title>
 </head>
 <body>
     <header>
-        <div>
-            <a href="../index.html">
+        <div class="container-fluid">
+            <a href="./index.html">
                 <img class="logo" src="./media/systec_logo_reduct.jpg" alt="logo de SySTEC computación">
             </a>  
         </div>    
-        <!-- <h1>SySTEC Computación</h1> -->
-        <nav>
-            <ul class="menu">
-                <li id="indexButton"><a href="#">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/servicio.html">Servicio Técnico</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" id="indexButton"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/servicio.html">Servicio Técnico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h2 class="animate__animated animate__fadeInRight">ENTERATE DE NUESTROS ÚLTIMOS INGRESOS</h2>
-        <div class="sidetoside">
-            <article id="carrousell">
-            <!-- aquí va carrousell con "últimas novedades"-->
+    <main class="container-fluid">
+        <div class="enterate">
+            <h1 class="animate__animated animate__fadeInRight">ENTERATE DE NUESTROS ÚLTIMOS INGRESOS</h1>
+        </div>
+        <div class="row container-fluid sidetoside">
+        <!-- <article class="col-xs-12 col-sm-12 col-md-6 container">
+            
+            aquí va carrousell con "últimas novedades"
                 <img src="./media/msi_gtx_1650.jpg" alt="Imagen de Placa de Video en stock">
-            </article>
-            <aside id="aside">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est totam perspiciatis nulla nesciunt aperiam ea, id, voluptatibus optio beatae consequuntur illum harum. Officiis ut repudiandae numquam impedit perferendis quod illum.
+            </article> -->
+            <div id="carousel" class="carousel slide col-xs-12 col-sm-12 col-md-6" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption">
+                            <p>Nvidia gtx 1650</p>
+                            <p>Gráficos de calidad en tu pc</p>
+                        </div>
+                        <img class="d-block w-100" src="./media/msi_gtx_1650.jpg" alt="Tarjeta de video gtx 1650">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Monitor Dell 22''</p>
+                            <p>Porque la resolución sí que importa</p>
+                        </div>
+                        <img class="d-block w-100" src="./media/Monitor.jpg" alt="Monitor Dell 22'' pulgadas">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <p>Teclado mecánico Logitech Carbon</p>
+                            <p>Un teclado acorde a tu nivel de juego</p>
+                            </div>
+                        <img class="d-block w-100" src="./media/logitechg413.jpg" alt="Teclado mecánico logitech carbon g413">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+            <aside class="col-xs-12 col-sm-12 col-md-6 col- container">
+                <p>Somos <strong>SySTEC Computación</strong> <br>
+                    Trabajamos día a día para traerte el mejor servicio de la región y los mejores productos en tecnología de la computación. Nuestros clientes nos elijen por nuestra excelente atención al público y nuestro asesoramiento personalizado. <br> Navegando por nuestra web vas a poder conocer un poco más sobre nosotros. <br> Te preparamos una selección de nuestros <strong>últimos ingresos y productos destacados</strong>, guardá está pagina en tus <strong>favoritos</strong> para no perderte de las novedades.
                 </p>
             </aside>
         </div>
-        <div class="mainText">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ad pariatur! Molestias debitis natus quasi alias atque accusantium reiciendis beatae expedita possimus ullam harum eius consectetur, iure accusamus culpa dolor sed cumque earum ut. Vel nostrum laborum, fuga voluptatem iure perspiciatis magnam voluptates,</p>
+        <div class="mainText container-fluid">
+            <p>En SySTEC nos motiva el progreso, <br> por eso queremos ayudarte a que te unas con la tecnología ideal para potenciar tu trabajo, tus horas de ocio y mucho más. <br>
+            </p>
         </div>
     </main>
     
@@ -57,17 +107,22 @@
         </div>
         
         <div class="calendar">
-            <i class="fa-solid fa-calendar"></i>
-            <i class="fa-solid fa-clock"></i>
-            <p>Estamos de Lunes a Viernes de 9:00 a 13:00 y de 15:30 a 20:00, Sábados de 9 a 13</p>
-            <p>Encontranos en Sarmiento 1343 Gral. Madariaga 
-            </p>
+            <div class="container-fluid d-inline-flex" id="calendarIcons">
+                <i class="fa-solid fa-calendar"></i>
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <h5>Estamos de Lunes a Viernes de 9:00 a 13:00 y de 15:30 a 20:00, Sábados de 9 a 13</h5>
+            <h5>Encontranos en Sarmiento Nº 1343 - General Madariaga</h5>
         </div>
         <div class="redes">
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-solid fa-square-phone"></i>
+            <a href='https://wa.me/5492267438446'><i class="fa-brands fa-whatsapp"></i></a>
+            <a href='https://instagram.com/systeccomputacion?igshid=YmMyMTA2M2Y='><i class="fa-brands fa-instagram"></i></a>
+            <a href='mailto:systec@outlook.com.ar'><i class="fa-solid fa-envelope"></i></a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
