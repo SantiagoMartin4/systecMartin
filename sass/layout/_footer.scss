@@ -50,6 +50,7 @@ footer {
 }
 
 .redes {
+    margin-top: 22px;
     width: 30%;
     height: auto;
     grid-area: redes;
@@ -57,7 +58,7 @@ footer {
     flex-wrap: nowrap;
 
     i {
-        font-size: 70px;
+        font-size: 50px;
         margin: 0 20px 1rem 5px;
     }
 }
@@ -72,10 +73,12 @@ footer {
 
 .fa-instagram {
     @extend .fa-whatsapp;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     height: 68px;
-    color: rgba(255, 255, 255, 0.835);
+    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);  
+    color:transparent; 
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .fa-envelope {
